@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "mycommands.helloWorld",
-        "title": "Hello World"
+        "command": "mycommands.sortline_csv",
+        "title": "Sort Line Items (CSV)"
       }
     ]
   },
