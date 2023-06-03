@@ -2,7 +2,8 @@
   "name": "mycommands",
   "displayName": "MyCommands",
   "description": "A bunch of custom VS Code commands.",
-  "version": "0.0.1",
+  "repository": "github:Charles-Zhang-VSCode/mycommands",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -16,6 +17,10 @@
       {
         "command": "mycommands.sortline_csv",
         "title": "Sort Line Items (CSV)"
+      },
+      {
+        "command": "mycommands.dot_lines",
+        "title": "Dots (Enumerate Lines as MD Format)"
       }
     ]
   },
