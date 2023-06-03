@@ -41,7 +41,7 @@ function dotLines() {
 	activeEditor.edit((edit: TextEditorEdit) => {
 		if (activeEditor && !activeEditor.selection.isEmpty) {
 			let selection = activeEditor.document.getText(activeEditor.selection);
-			let lines = selection.split('\n').map(w => '* ' + w.trim()).sort();
+			let lines = selection.split('\n').map(w => '* ' + w.trim());
 			edit.replace(activeEditor.selection, lines.join('\n'));
 		}
 	});
