@@ -1,6 +1,6 @@
 # My Commands
 
-This extension provides some commonly used text commands for daily use, very personal stuff.
+Raw text, light-weight, zero-dependancy - this extension provides some commonly used text commands mostly targeting Markdown use, with somewhat opinionated command picking design leaning towards daily personal use.
 
 ## Setup
 

@@ -12,6 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// The commandId parameter must match the command field in package.json
 	context.subscriptions.push(vscode.commands.registerCommand('mycommands.sortline_csv', sortlineCSV));
 	context.subscriptions.push(vscode.commands.registerCommand('mycommands.dot_lines', dotLines));
+	context.subscriptions.push(vscode.commands.registerCommand('mycommands.sort_sections', sortSections));
 }
 
 export function deactivate() {}
@@ -44,4 +45,7 @@ function dotLines() {
 			edit.replace(activeEditor.selection, lines.join('\n'));
 		}
 	});
+}
+function sortSections() {
+	vscode.window.showInformationMessage('Not implemented.');
 }

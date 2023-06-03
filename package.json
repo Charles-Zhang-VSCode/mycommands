@@ -3,7 +3,7 @@
   "displayName": "MyCommands",
   "description": "A bunch of custom VS Code commands.",
   "repository": "github:Charles-Zhang-VSCode/mycommands",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -21,6 +21,10 @@
       {
         "command": "mycommands.dot_lines",
         "title": "Dots (Enumerate Lines as MD Format)"
+      },
+      {
+        "command": "mycommands.sort_sections",
+        "title": "Sort Sections (At Current Level) (GFM Header Format)"
       }
     ]
   },
