@@ -10,23 +10,23 @@ export function activate(context: vscode.ExtensionContext) {
 	// Provide implementations to the comamnds defined in the package.json file;
 	// Commands defined in package.json file do not require extention to be loaded to display.
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('mycommands.sortline_csv', () => {
-		let activeEditor = vscode.window.activeTextEditor;
-		if (!activeEditor) {
-			return;
-		}
-
-		activeEditor.edit((edit: TextEditorEdit) => {
-			if (activeEditor && !activeEditor.selection.isEmpty) {
-				let selection = activeEditor.document.getText(activeEditor.selection);
-				let words = selection.split(',').map(w => w.trim()).sort();
-				edit.replace(activeEditor.selection, words.join(', '));
-			}
-		});
-		vscode.window.showInformationMessage('Done!');
-	});
-
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(vscode.commands.registerCommand('mycommands.sortline_csv', sortlineCSV));
 }
 
 export function deactivate() {}
+
+// Implementations
+function sortlineCSV() {
+	let activeEditor = vscode.window.activeTextEditor;
+	if (!activeEditor) {
+		return;
+	}
+
+	activeEditor.edit((edit: TextEditorEdit) => {
+		if (activeEditor && !activeEditor.selection.isEmpty) {
+			let selection = activeEditor.document.getText(activeEditor.selection);
+			let words = selection.split(',').map(w => w.trim()).sort();
+			edit.replace(activeEditor.selection, words.join(', '));
+		}
+	});
+}

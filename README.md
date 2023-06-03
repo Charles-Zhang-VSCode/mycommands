@@ -2,6 +2,15 @@
 
 This extension provides some commonly used text commands for daily use, very personal stuff.
 
+## Setup
+
+For first-time build after downloading the repo source, use:
+
+* `npm install -g yo generator-code` for generator
+* `npm install -g @vscode/vsce`
+* `npm install` to install `package.json`
+* `vsce package` to generate vsix
+
 ## Features
 
 ## Requirements
