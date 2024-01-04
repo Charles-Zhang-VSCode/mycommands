@@ -4,7 +4,12 @@ Raw text, light-weight, zero-dependancy - this extension provides some commonly 
 
 ## Setup
 
-For first-time build after downloading the repo source, use:
+For end-user:
+
+* Download `vsix` from release
+* Install from VS Code using `Extension` > `Install from VSIX...`
+
+For development and first-time build after downloading the repo source, use:
 
 * `npm install -g yo generator-code` for generator
 * `npm install -g @vscode/vsce`
@@ -12,6 +17,18 @@ For first-time build after downloading the repo source, use:
 * `vsce package` to generate vsix
 
 ## Features
+
+Commands:
+
+* Dots (Enumerate Lines as MD Format)
+* Sort Line Items (CSV)
+
+Todo:
+
+- [ ] (Command) Sort Lines Ascending (ignore Tags)
+- [ ] (Command) Sort MD Sections
+- [ ] (Publishing) Release on VS Code Marketplace
+- [ ] (Publishing) Refine extension publisher information, icons, documentation
 
 ## Requirements
 
@@ -27,6 +44,10 @@ This extension contributes the following settings:
 * `myExtension.thing`: Set to `blah` to do something.
 
 ## Known Issues
+
+<!-- See Github [issues](https://github.com/Charles-Zhang-VSCode/mycommands/issues) -->
+
+N/A
 
 ## Release Notes
 
