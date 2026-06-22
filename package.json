@@ -1,9 +1,10 @@
 {
   "name": "mycommands",
   "displayName": "MyCommands",
-  "description": "A bunch of custom VS Code commands.",
+  "description": "Some handy commands for everyday use.",
   "repository": "github:Charles-Zhang-VSCode/mycommands",
   "version": "0.0.3",
+  "publisher": "methodox",
   "engines": {
     "vscode": "^1.78.0"
   },

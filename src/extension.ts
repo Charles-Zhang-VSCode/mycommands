@@ -5,7 +5,7 @@ import { TextEditorEdit } from 'vscode';
 
 // The extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	console.log('MyComands extension is activated!');
+	console.log('MyCommands extension is activated!');
 
 	// Provide implementations to the comamnds defined in the package.json file;
 	// Commands defined in package.json file do not require extention to be loaded to display.
