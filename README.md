@@ -1,47 +1,119 @@
 # My Commands
 
-Raw text, light-weight, zero-dependancy - this extension provides some commonly used text commands mostly targeting Markdown use, with somewhat opinionated command picking design leaning towards daily personal use.
-
-## Setup
-
-For end-user:
-
-* Download `vsix` from release
-* Install from VS Code using `Extension` > `Install from VSIX...`
-
-For development and first-time build after downloading the repo source, use:
-
-* `npm install -g yo generator-code` for generator
-* `npm install -g @vscode/vsce`
-* `npm install` to install `package.json`
-* `vsce package` to generate vsix
+A small collection of practical VS Code commands for everyday text editing and Markdown cleanup.
 
 ## Features
 
-Commands:
+My Commands adds lightweight commands for common text transformations directly from the **Command Palette**:
 
-* Dots (Enumerate Lines as MD Format)
-* Sort Line Items (CSV)
+* `Dots (Enumerate Lines as MD Format)`
+* `Sort Line Items (CSV)`
+* `Indent Markdown Sections`
+* `Unindent Markdown Sections`
+* `Sort Markdown Sections`
+* `Count Lines`
 
-Todo:
+### Commands
 
-- [ ] (Command) Sort Lines Ascending (ignore Tags)
-- [ ] (Command) Sort MD Sections
-- [ ] (Publishing) Release on VS Code Marketplace
-- [ ] (Publishing) Refine extension publisher information, icons, documentation
+**`Dots (Enumerate Lines as MD Format)`**
 
-## Requirements
+Converts selected lines into Markdown bullet points.
 
-## Extension Settings
+Example:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```text
+Apple
+Banana
+Cherry
+````
 
-For example:
+Becomes:
 
-This extension contributes the following settings:
+```md
+* Apple
+* Banana
+* Cherry
+```
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+**`Sort Line Items (CSV)`**
+
+Sorts comma-separated items in the selected text.
+
+Example:
+
+```text
+banana, apple, cherry
+```
+
+Becomes:
+
+```text
+apple, banana, cherry
+```
+
+**`Indent Markdown Sections`**
+
+Adds one heading level to each selected Markdown section header.
+
+Example:
+
+```md
+# Title
+## Section
+```
+
+Becomes:
+
+```md
+## Title
+### Section
+```
+
+**`Unindent Markdown Sections`**
+
+Removes one heading level from each selected Markdown section header. Level 1 headers are left unchanged.
+
+Example:
+
+```md
+# Title
+## Section
+### Details
+```
+
+Becomes:
+
+```md
+# Title
+# Section
+## Details
+```
+
+**`Sort Markdown Sections`**
+
+Sorts Markdown sections alphabetically by heading title while preserving section hierarchy and content.
+
+This is useful for organizing notes, documentation, outlines, and Markdown files with repeated sections.
+
+**`Count Lines`**
+
+Counts the number of lines in the selected text. If no text is selected, it counts the lines in the whole document.
+
+## Usage
+
+Open the Command Palette with `Ctrl+Shift+P` / `Cmd+Shift+P` / `F1`, then search for any command ending with `- MyCommands`.
+
+## Notes
+
+Markdown section commands recognize GitHub-style headings such as:
+
+```md
+# Heading
+## Section
+### Subsection
+```
+
+Only headings that start with one or more `#` characters followed by a space are treated as section headers.
 
 ## Known Issues
 
@@ -55,12 +127,20 @@ N/A
 
 Initial setup.
 
-## Following extension guidelines
+### 0.0.2
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+Implement sort line items and "dot".
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+### 0.0.3
 
-## Working with Markdown
+Update "dot" behavior.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### 0.0.4
+
+Initial release.
+
+Add new commands.
+
+## License
+
+MIT
