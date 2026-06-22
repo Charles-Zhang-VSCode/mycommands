@@ -16,15 +16,27 @@
     "commands": [
       {
         "command": "mycommands.sortline_csv",
-        "title": "Sort Line Items (CSV)"
+        "title": "Sort Line Items (CSV) - MyCommands"
       },
       {
         "command": "mycommands.dot_lines",
-        "title": "Dots (Enumerate Lines as MD Format)"
+        "title": "Dots (Enumerate Lines as MD Format) - MyCommands"
       },
       {
         "command": "mycommands.sort_sections",
-        "title": "Sort Sections (At Current Level) (GFM Header Format)"
+        "title": "Sort Sections (At Current Level) (GFM Header Format) - MyCommands"
+      },
+      {
+        "command": "mycommands.indent_sort_sections",
+        "title": "Indent Sections - MyCommands"
+      },
+      {
+        "command": "mycommands.unindent_sort_sections",
+        "title": "Unindent Sections - MyCommands"
+      },
+      {
+        "command": "mycommands.lines",
+        "title": "Count Lines - MyCommands"
       }
     ]
   },
