@@ -126,3 +126,21 @@ N/A
 ### 0.0.1
 
 Initial setup.
+
+### 0.0.2
+
+Implement sort line items and "dot".
+
+### 0.0.3
+
+Update "dot" behavior.
+
+### 0.0.4
+
+Initial release.
+
+Add new commands.
+
+## License
+
+MIT
