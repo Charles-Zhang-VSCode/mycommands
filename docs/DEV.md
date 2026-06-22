@@ -78,6 +78,8 @@ For development and first-time build after downloading the repo source, use:
 * `npm install` to install `package.json`
 * `vsce package` to generate vsix
 
+At repo root:
+
 ```bash
 npm run compile
 vsce package

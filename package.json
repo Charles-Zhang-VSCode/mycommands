@@ -3,8 +3,10 @@
   "displayName": "MyCommands",
   "description": "Some handy commands for everyday use.",
   "repository": "github:Charles-Zhang-VSCode/mycommands",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "methodox",
+  "license": "MIT",
+  "author": "Charles Zhang",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -24,19 +26,19 @@
         "title": "Dots (Enumerate Lines as MD Format) - MyCommands"
       },
       {
-        "command": "mycommands.sort_sections",
-        "title": "Sort Sections (At Current Level) (GFM Header Format) - MyCommands"
+        "command": "mycommands.sort_markdown_sections",
+        "title": "Sort Markdown Sections - MyCommands"
       },
       {
-        "command": "mycommands.indent_sort_sections",
-        "title": "Indent Sections - MyCommands"
+        "command": "mycommands.indent_markdown_sections",
+        "title": "Indent Markdown Sections - MyCommands"
       },
       {
-        "command": "mycommands.unindent_sort_sections",
-        "title": "Unindent Sections - MyCommands"
+        "command": "mycommands.unindent_markdown_sections",
+        "title": "Unindent Markdown Sections - MyCommands"
       },
       {
-        "command": "mycommands.lines",
+        "command": "mycommands.count_lines",
         "title": "Count Lines - MyCommands"
       }
     ]
